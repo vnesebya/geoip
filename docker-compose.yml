@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+
+  geoip:
+    build: .
+    restart: always
+    volumes:
+      - ./GeoIP2/GeoIP:/usr/local/share/GeoIP:rw
+      - ./GeoIP2/GeoIP.conf:/usr/local/etc/GeoIP.conf:ro

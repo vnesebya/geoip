@@ -1,0 +1,4 @@
+*.lock
+*.mmdb
+GeoIP2/
+
