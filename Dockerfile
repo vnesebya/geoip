@@ -27,8 +27,8 @@ VOLUME ${GEOIP_DB_DIR}
 # copy geoipupdate settings
 COPY GeoIP.conf /usr/local/etc/GeoIP.conf
 
-COPY ./GeoIP2/${GEOIP_CNTR_DB} ${GEOIP_DB_DIR}
-COPY ./GeoIP2/${GEOIP_CITY_DB} ${GEOIP_DB_DIR}
+#COPY ./GeoIP2/${GEOIP_CNTR_DB} ${GEOIP_DB_DIR}
+#COPY ./GeoIP2/${GEOIP_CITY_DB} ${GEOIP_DB_DIR}
 
 # install geoipupdate
 RUN BUILD_DEPS='gcc make libc-dev libtool automake autoconf git' \
