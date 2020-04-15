@@ -1,4 +1,3 @@
 *.lock
 *.mmdb
-GeoIP2/
-
+GeoIP2/GeoIP.conf
